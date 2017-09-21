@@ -1,0 +1,350 @@
+cat /state
+{
+    "security": {
+        "ips": {
+            "current_file": "",
+            "last_updated": 0,
+            "prev_file": ""
+        }
+    },
+    "suppressor": {
+        "tunnels": []
+    },
+    "system": {
+        "admin": {
+            "filesystem": {
+                "mount_failure_count": 0,
+                "ubiattach_failure_count": 0,
+                "ubimkvol_failure_count": 0,
+                "umount_failure_count": 0
+            },
+            "reboot_count": {
+                "gpio_reset": 0,
+                "gpio_shutdown": 0,
+                "power_reset": 0,
+                "system_reset": 0,
+                "watchdog_reset": 0
+            }
+        },
+        "apps": [
+            {
+                "_id_": "8db762ae-d9fe-4af5-8dd8-1bbb31daeca7",
+                "app": {
+                    "app_type": 1,
+                    "auto_start": true,
+                    "date": "2017-09-15T01:03:55.601845",
+                    "files": [
+                        {
+                            "hash": "99cd3b94c357b525747e4eca4124d6e51d450e8ac844bf2fc7a295a89971e227",
+                            "name": "start.sh"
+                        },
+                        {
+                            "hash": "c65975adb449c787a65717a09e4d554d102f59aa0647ec0e8cebc55d49a4b48d",
+                            "name": "install.sh"
+                        },
+                        {
+                            "hash": "8f16bcbc8244890d1c71d012b3720faf080b153c459317f7bbae99673813beb6",
+                            "name": "package.ini"
+                        },
+                        {
+                            "hash": "679a6e04f12445f221b93587d23eb258bbb28c65c5b813e168ff0afb17408cce",
+                            "name": "Shell.py"
+                        },
+                        {
+                            "hash": "e5cee2c22d786bc94e37baf63e328c706759ba674dd54248b16face3910d8b64",
+                            "name": "test_rpf_app.py"
+                        },
+                        {
+                            "hash": "328b323ee7948c608f66c32532f3aa34c618992789da94afc5fb27abe44d91ba",
+                            "name": "CPTerm.py"
+                        },
+                        {
+                            "hash": "9ed49b2467458dca8a43fc79384ca7f4d5ed6c887386c4175818d9293a65176a",
+                            "name": "sdk_cs_client.py"
+                        },
+                        {
+                            "hash": "3d34c8bd41c7ebadf2281094cf26398d6504bc16bd3da5a83d3693a9e27f3a22",
+                            "name": "rsa.raw.key"
+                        },
+                        {
+                            "hash": "7689d2cac1c0add55b7078b211c35a9e9658e1a0bdce0a4647834637a5b6626f",
+                            "name": "SSHSheller.py"
+                        },
+                        {
+                            "hash": "e6c70887afbfbddd2ce551d24bf56db280573936f17ab9780c02dc631e74167f",
+                            "name": "dbclient"
+                        },
+                        {
+                            "hash": "30bd5e877561fbf26401d83b7e470c89fc28f27e19742707aac99efb6e82b399",
+                            "name": "webapi.py"
+                        },
+                        {
+                            "hash": "9fba9e255c048b164c3ea741288115e2000953b636a9082cc4160d81c21359f2",
+                            "name": "remote_port_forward.py"
+                        }
+                    ],
+                    "firmware_major": 6,
+                    "firmware_minor": 3,
+                    "name": "remote_port_forward",
+                    "reboot": true,
+                    "restart": false,
+                    "uuid": "8db762ae-d9fe-4af5-8dd8-1bbb31daeca7",
+                    "vendor": "Cradlepoint",
+                    "version_major": 3,
+                    "version_minor": 3
+                }
+            },
+            {
+                "_id_": "fbf3522a-83b8-4901-97c9-067772d9993c",
+                "app": {
+                    "app_type": 0,
+                    "auto_start": true,
+                    "date": "2017-09-18T14:40:55.556529",
+                    "files": [
+                        {
+                            "hash": "d4e4288567559c043bfc1239d83f8468ec168f97448a855044fe59f6e058eee5",
+                            "name": "cs.py"
+                        },
+                        {
+                            "hash": "3d65c7d1b3db9f62164e9603a41945546335f2f07ed684eb9a9eb31349bf7068",
+                            "name": "install.sh"
+                        },
+                        {
+                            "hash": "0097b8197ac72524b2079ff43862072ec32704e4ae8921e5ea10543d586d61bc",
+                            "name": "stop.sh"
+                        },
+                        {
+                            "hash": "95169747832c47894e4f21e41acd578ba7ce828fc1b633ddf01d45d5d54d58f7",
+                            "name": "simple_web_server.py"
+                        },
+                        {
+                            "hash": "d6ad2ddecaccab0710bb0e707329a49907ffc01b0daea733822f478554be2c0b",
+                            "name": "package.ini"
+                        },
+                        {
+                            "hash": "9c369a9dd5bd9c5b12eb7d4b8c93c94d063f874034b565225c85ff7405a06e28",
+                            "name": "start.sh"
+                        }
+                    ],
+                    "firmware_major": 6,
+                    "firmware_minor": 2,
+                    "name": "simple_web_server",
+                    "notes": "Simple Web Server Reference Application with single fixed page",
+                    "reboot": true,
+                    "restart": false,
+                    "uuid": "fbf3522a-83b8-4901-97c9-067772d9993c",
+                    "vendor": "Cradlepoint",
+                    "version_major": 1,
+                    "version_minor": 0
+                }
+            },
+            {
+                "_id_": "fbf3522a-83b8-4902-97c9-067772d9993c",
+                "app": {
+                    "app_type": 0,
+                    "auto_start": true,
+                    "date": "2017-09-18T18:57:44Z",
+                    "files": [
+                        {
+                            "hash": "be18ea9fe4b9c7297cc1846ddf6c2493f91586e507e8049ecf28a32da2194cf8",
+                            "name": "package.ini"
+                        },
+                        {
+                            "hash": "744da6f64721e407b1f25d62cc64c7a488aa905c737b87d036ba99811e35864a",
+                            "name": "settings.json"
+                        },
+                        {
+                            "hash": "b9f24523df1075513d13626fcaad5060e4769c82e3122f562cc450f66c672762",
+                            "name": "cp_lib/load_product_info.py"
+                        },
+                        {
+                            "hash": "36a9e7f1c95b82ffb99743e0c5c4ce95d83c9a430aac59f84ef3cbfab6145068",
+                            "name": "cp_lib/data/__init__.py"
+                        },
+                        {
+                            "hash": "75d166162cfe620e48a6f4991c2f22b3a7dcaeb7adff55a2c13cf94f2e2c7185",
+                            "name": "cp_lib/parse_data.py"
+                        },
+                        {
+                            "hash": "e13c9dc80102676fc87b876332a0bd241637d2fa91898d711e26d0871d5d7bfb",
+                            "name": "cp_lib/cs_client.py"
+                        },
+                        {
+                            "hash": "a9e71a49f0216b6b0e961cad7607c8c79dc2f0b1158a9d635514369edc0b31de",
+                            "name": "cp_lib/parse_duration.py"
+                        },
+                        {
+                            "hash": "7cc5d2abde03b4e6346c2c435d9346b0c9913ac1bc91664ea6efdbe8ed0daa51",
+                            "name": "go.bat"
+                        },
+                        {
+                            "hash": "3194a802ebb2044636a451ece3e2490cbab8a17bf9b131e574d425d05ca5ec02",
+                            "name": "cp_lib/cp_logging.py"
+                        },
+                        {
+                            "hash": "84b6f2082dda8d7a193bca68ad736866e208e3c30465db9a277861a9f541ccba",
+                            "name": "cp_lib/cs_client_remote.py"
+                        },
+                        {
+                            "hash": "8c49868526e60840c76a7a3f7d5991608f8b530c0ac890cc9f4bd04f1b1ddb8a",
+                            "name": "install.sh"
+                        },
+                        {
+                            "hash": "36a9e7f1c95b82ffb99743e0c5c4ce95d83c9a430aac59f84ef3cbfab6145068",
+                            "name": "__init__.py"
+                        },
+                        {
+                            "hash": "d7333b87e62e1441247030a514cb959b608d7d52e07d1e522b19c4a4c8a2c6b1",
+                            "name": "cp_lib/split_version.py"
+                        },
+                        {
+                            "hash": "ba82c863ac66b58701eba46ba04cfbdc17e9271dce745519b169bdfa1c6b7ad9",
+                            "name": "dashboard/__init__.py"
+                        },
+                        {
+                            "hash": "41fb2ed7b40d6d9d94b837ad8c19e2bbc5163ce63250c20d89b52f2201c01c69",
+                            "name": "cp_lib/hw_status.py"
+                        },
+                        {
+                            "hash": "381aef353ad132270f4a184a400a73b74a75b8003c9dabb8bf120c549709a895",
+                            "name": "cp_lib/buffer_dump.py"
+                        },
+                        {
+                            "hash": "80f090d7f03becf64b411dddb9ce74161551732882019d0e3c4e87136a3ab82a",
+                            "name": "dashboard/dashboard_site.py"
+                        },
+                        {
+                            "hash": "2a485413374ed7ef1c879da48d73cb48f258d115f6f01dd13d9d28c641a5677c",
+                            "name": "cp_lib/unquote_string.py"
+                        },
+                        {
+                            "hash": "3273469f2dbaea60dc7cf3a2d8a8727f15ad37b3cf12383e317b5c56cb965a1d",
+                            "name": "cp_lib/data/data_tree.py"
+                        },
+                        {
+                            "hash": "36a9e7f1c95b82ffb99743e0c5c4ce95d83c9a430aac59f84ef3cbfab6145068",
+                            "name": "cp_lib/__init__.py"
+                        },
+                        {
+                            "hash": "6317083e196b7067d74b1da5e6f938c5173c63d2734ed2531b1c567225aa065e",
+                            "name": "main.py"
+                        },
+                        {
+                            "hash": "712f2dd05760dfdd1d1a3e6c35c8991fe3f05ecc4715d2d832cec4a43351a351",
+                            "name": "dashboard/sample_status-wan-devices.json"
+                        },
+                        {
+                            "hash": "4382ab9e5d68d69c462c96433bb89e2ea6685852b31b61a2ea9f005d05737cb4",
+                            "name": "cp_lib/load_settings_json.py"
+                        },
+                        {
+                            "hash": "e48c144fca472630fc42cc3e27138ddbb15a001b27e7544e8cb31601ca33f592",
+                            "name": "cp_lib/load_firmware_info.py"
+                        },
+                        {
+                            "hash": "a6856f1965c61d6c433fc2c1f831c6fad6008e998d1b9436d0bbdbbc1ed52657",
+                            "name": "start.sh"
+                        },
+                        {
+                            "hash": "be0a6dba5e1ccf6f4c2e726195cb187a467ad4eff42be3cba10cbfd8c1fcaa25",
+                            "name": "cp_lib/app_name_parse.py"
+                        },
+                        {
+                            "hash": "50b70bd0f3764d738a17c4a3ee514277c9dfd0665bf7cc143ad7d67da23641d0",
+                            "name": "dashboard/README.md"
+                        },
+                        {
+                            "hash": "a4137668fb9e46a1807800ca6a3e3f4c1c50e25a5396ce3ea3dadf95c0506b27",
+                            "name": "cp_lib/app_base.py"
+                        }
+                    ],
+                    "firmware_major": 6,
+                    "firmware_minor": 1,
+                    "name": "dashboard",
+                    "notes": "Basic dashboard, with single fixed page",
+                    "reboot": true,
+                    "restart": true,
+                    "uuid": "fbf3522a-83b8-4902-97c9-067772d9993c",
+                    "vendor": "customer",
+                    "version_major": 1,
+                    "version_minor": 6
+                }
+            },
+            {
+                "_id_": "5cebbb2b-23df-4068-8098-9f97e06f1569",
+                "app": {
+                    "app_type": 0,
+                    "auto_start": true,
+                    "date": "2017-09-19T16:30:08.412509",
+                    "files": [
+                        {
+                            "hash": "7c0cab87d2a8762a3207a46362eb3ada539f0dace8a15a9e7e96ba699fe15997",
+                            "name": "package.ini"
+                        },
+                        {
+                            "hash": "d4e4288567559c043bfc1239d83f8468ec168f97448a855044fe59f6e058eee5",
+                            "name": "cs.py"
+                        },
+                        {
+                            "hash": "4d6a087d7e5fcbf3b408b1c023aa5b69017c25d30e32b89fde311d0460ce94a4",
+                            "name": "start.sh"
+                        },
+                        {
+                            "hash": "59902399869f6781dce022793f3fea71e5c14cf694dde2f9a125756844547b2b",
+                            "name": "palmtree.py"
+                        },
+                        {
+                            "hash": "abc644836a4e2349cad72c1b65c23812d3354ee266f9f42793f7587113e2fea8",
+                            "name": "install.sh"
+                        },
+                        {
+                            "hash": "4abb79c223d68b796f481f49fd1cb7007051316f63d221a53b1340f84ecfb799",
+                            "name": "stop.sh"
+                        }
+                    ],
+                    "firmware_major": 6,
+                    "firmware_minor": 2,
+                    "name": "palmtree",
+                    "notes": "Dynamic dashboard",
+                    "reboot": true,
+                    "restart": false,
+                    "uuid": "5cebbb2b-23df-4068-8098-9f97e06f1569",
+                    "vendor": "Phoenix IS",
+                    "version_major": 1,
+                    "version_minor": 0
+                }
+            }
+        ],
+        "dyndns": {
+            "status": "notcfg"
+        },
+        "netperf": {
+            "run_count": 0
+        },
+        "overlay": {}
+    },
+    "wan": {
+        "devices": [
+            {
+                "auto_apn": {
+                    "iccid": "",
+                    "index": 0,
+                    "mode": "Normal",
+                    "plmn": "",
+                    "state": "Initial"
+                },
+                "id": "mdm-80a4671e"
+            },
+            {
+                "auto_apn": {
+                    "iccid": "89148000000145764347",
+                    "index": 0,
+                    "mode": "Normal",
+                    "plmn": "311480",
+                    "state": "Failed"
+                },
+                "id": "mdm-80d22e57"
+            }
+        ]
+    }
+}

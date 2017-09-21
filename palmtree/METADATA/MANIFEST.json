@@ -1,0 +1,28 @@
+{
+    "app": {
+        "auto_start": true,
+        "date": "2017-09-19T16:30:08.412509",
+        "files": {
+            "cs.py": "d4e4288567559c043bfc1239d83f8468ec168f97448a855044fe59f6e058eee5",
+            "install.sh": "abc644836a4e2349cad72c1b65c23812d3354ee266f9f42793f7587113e2fea8",
+            "package.ini": "7c0cab87d2a8762a3207a46362eb3ada539f0dace8a15a9e7e96ba699fe15997",
+            "palmtree.py": "59902399869f6781dce022793f3fea71e5c14cf694dde2f9a125756844547b2b",
+            "start.sh": "4d6a087d7e5fcbf3b408b1c023aa5b69017c25d30e32b89fde311d0460ce94a4",
+            "stop.sh": "4abb79c223d68b796f481f49fd1cb7007051316f63d221a53b1340f84ecfb799"
+        },
+        "firmware_major": 6,
+        "firmware_minor": 2,
+        "name": "palmtree",
+        "notes": "Dynamic dashboard",
+        "reboot": true,
+        "restart": false,
+        "uuid": "5cebbb2b-23df-4068-8098-9f97e06f1569",
+        "vendor": "Phoenix IS",
+        "version_major": 1,
+        "version_minor": 0
+    },
+    "pmf": {
+        "version_major": 1,
+        "version_minor": 0
+    }
+}

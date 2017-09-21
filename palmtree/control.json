@@ -1,0 +1,373 @@
+cat /control
+{
+    "button": {
+        "factory_reset": false
+    },
+    "certmgmt": {
+        "ca": {},
+        "csr": {}
+    },
+    "csterm": {},
+    "dns": {
+        "servers": [
+            {
+                "domain": "optional.any.example",
+                "ip_address": "0.0.0.0",
+                "mode": "disabled",
+                "priority": 0
+            }
+        ]
+    },
+    "dnsmonitor": {},
+    "ecm": {
+        "cert": null,
+        "enable_legacy": false,
+        "register": {
+            "password": null,
+            "token_id": null,
+            "token_secret": null,
+            "username": null
+        },
+        "reset_timers": null,
+        "restart": null,
+        "start": null,
+        "stop": null
+    },
+    "firewall": {
+        "conntrack": {
+            "flush": false
+        },
+        "hitcounter": {
+            "reset_count": "none"
+        },
+        "rule": {}
+    },
+    "gpio": {
+        "ATTN_RED": 0,
+        "CONNECTOR_INPUT": 0,
+        "CONNECTOR_OUTPUT": 0,
+        "GPIO_RESET_BUTTON": 0,
+        "GPS_BLU": 0,
+        "LED_SS_0": 0,
+        "LED_SS_1": 0,
+        "LED_SS_2": 0,
+        "LED_SS_3": 0,
+        "LED_WIFI": 0,
+        "MODEM_GRN": 0,
+        "MODEM_RED": 0,
+        "POWER_EN_INT1": 1,
+        "POWER_EN_USB1": 1,
+        "POWER_OFF_LATCH": 0,
+        "POWER_OFF_TOGGLE": 0,
+        "SATA_GPIO_1": 1,
+        "SATA_GPIO_2": 1,
+        "SATA_GPIO_3": 1,
+        "SATA_GPIO_4": 1,
+        "SATA_IGNITION_SENSE": 0
+    },
+    "gps": {
+        "nmea_log_as_input": "",
+        "start": 0,
+        "stop": 0
+    },
+    "gre": {
+        "exception": {}
+    },
+    "gre_netmanager": {
+        "reset_stats": null
+    },
+    "hotspot": {
+        "clearList": true,
+        "loadprofile": {},
+        "revoke": {}
+    },
+    "lan": {
+        "devices": {
+            "ethernet-lan": {
+                "reset_stats": null
+            },
+            "wlan-wireless0": {
+                "reset_stats": null
+            },
+            "wlan-wireless0_1": {
+                "reset_stats": null
+            },
+            "wlan-wireless1_1": {
+                "reset_stats": null
+            }
+        },
+        "quick_ip_pass": false,
+        "reset_stats": null
+    },
+    "led": {
+        "reset_leds": null
+    },
+    "log": {
+        "clear": false
+    },
+    "netperf": {
+        "input": {
+            "options": {
+                "host": "",
+                "ifc_wan": "",
+                "limit": {
+                    "size": 0,
+                    "time": 5
+                },
+                "port": null,
+                "recv": true,
+                "rr": false,
+                "send": false,
+                "tcp": true,
+                "udp": false
+            },
+            "tests": null
+        },
+        "run": null
+    },
+    "ob_upgrade": {
+        "check": "no_update",
+        "delay": 60,
+        "fw_update": {
+            "factory_reset": false
+        },
+        "mdm_check_delay": 300,
+        "reboot": false
+    },
+    "opennhrp": {
+        "flush": false,
+        "vpn_connect": [],
+        "vpn_disconnect": []
+    },
+    "openvpn_netmanager": {
+        "reset_stats": null
+    },
+    "ping": {
+        "result": "",
+        "start": {
+            "bind_ip": false,
+            "deadline": "Same as timeout",
+            "df": "do",
+            "family": "inet",
+            "fwmark": null,
+            "host": null,
+            "iface": null,
+            "interval": 1,
+            "num": 4,
+            "size": 56,
+            "srcaddr": null,
+            "timeout": 11
+        },
+        "status": "",
+        "stop": ""
+    },
+    "qos": {
+        "override": false
+    },
+    "routing": {
+        "static": {
+            "refresh": false,
+            "route": {
+                "add": {
+                    "destination": "destination ip or netcidr",
+                    "gateway": "ip or netcidr of gateway",
+                    "id": "some-unique-id",
+                    "interface": "network interface",
+                    "metric": "route priority",
+                    "table": "table name"
+                },
+                "del": {
+                    "id": "some-unique-id"
+                }
+            },
+            "table": {
+                "add": {
+                    "family": [
+                        "ipv4",
+                        "ipv6"
+                    ],
+                    "id": "some-unique-id",
+                    "ingress_interface": [
+                        "any",
+                        "wan",
+                        "ecm",
+                        ".."
+                    ],
+                    "priority": "0 - 50000",
+                    "source": [
+                        "ip or netcidr 1",
+                        "optional 2",
+                        "..."
+                    ]
+                },
+                "del": {
+                    "id": "some-unique-id"
+                }
+            }
+        },
+        "suppression": {
+            "add": [
+                {
+                    "dest": [
+                        "ip or netcidr 1",
+                        "optional 2..."
+                    ],
+                    "exception": "optional dest for exception route",
+                    "id": "some-unique-uuid",
+                    "src": [
+                        "ip or netcidr 1",
+                        "optional 2..."
+                    ]
+                }
+            ],
+            "del": [
+                "some-unique-uuid"
+            ]
+        }
+    },
+    "signal_strength_leds": "enabled",
+    "stats": {
+        "client_usage": {
+            "clear": false,
+            "reset": false
+        }
+    },
+    "system": {
+        "clock": {
+            "set_dst": true,
+            "set_time": 0,
+            "set_zone": "+7"
+        },
+        "factory_reset": null,
+        "httpserver": {},
+        "localtime": "1970-01-01 00:01:04",
+        "reboot": null,
+        "remote_port_fwd": {
+            "cmd": "",
+            "connect_addr": "",
+            "connect_port": "",
+            "identity": "",
+            "idle_timeout": "",
+            "listen_addr": "",
+            "listen_port": "",
+            "proxy_addr": "",
+            "proxy_port": "",
+            "user": ""
+        },
+        "techsupport_access": false
+    },
+    "testmode": {
+        "atmodemtest": false
+    },
+    "traceroute": {
+        "result": [],
+        "start": "",
+        "status": "not started",
+        "stop": ""
+    },
+    "vpn": {
+        "connect": [],
+        "connectingtimeout": [],
+        "dead": [],
+        "disconnect": [],
+        "down": [],
+        "hostdown": [],
+        "hostup": [],
+        "install": [],
+        "loglevel": [],
+        "restarttunnel": [],
+        "start": [],
+        "starttunnel": [],
+        "status": "Stopped",
+        "stop": [],
+        "stoptunnel": [],
+        "uninstall": [],
+        "up": []
+    },
+    "vti_netmanager": {
+        "reset_stats": null
+    },
+    "wan": {
+        "devices": {
+            "ethernet-wan": {
+                "fw_upgrade": null,
+                "manual_activate_connect": null,
+                "manual_activate_done": null,
+                "manual_activate_finalize": null,
+                "manual_activate_started": null,
+                "reset": null,
+                "reset_stats": null
+            },
+            "mdm-80a4671e": {
+                "activity": null,
+                "factory_defaults_finalize": null,
+                "fw_upgrade": null,
+                "manual_activate_connect": null,
+                "manual_activate_done": null,
+                "manual_activate_finalize": null,
+                "manual_activate_started": null,
+                "puk_unlock": null,
+                "reset": null,
+                "reset_stats": null,
+                "testmode": {
+                    "ready": true,
+                    "reset": false
+                }
+            },
+            "mdm-80d22e57": {
+                "activity": null,
+                "factory_defaults_finalize": null,
+                "fw_upgrade": null,
+                "manual_activate_connect": null,
+                "manual_activate_done": null,
+                "manual_activate_finalize": null,
+                "manual_activate_started": null,
+                "puk_unlock": null,
+                "reset": null,
+                "reset_stats": null,
+                "testmode": {
+                    "ready": true,
+                    "reset": false
+                }
+            }
+        },
+        "powersave": null,
+        "reset_stats": null
+    },
+    "webfilter": {
+        "debug": 0
+    },
+    "wlan": {
+        "block_macs": [],
+        "enable": true,
+        "kick_mac": null,
+        "radio": [
+            {
+                "bss": [
+                    {
+                        "inhibit": false
+                    },
+                    {
+                        "inhibit": false
+                    }
+                ]
+            },
+            {
+                "bss": [
+                    {
+                        "inhibit": false
+                    },
+                    {
+                        "inhibit": false
+                    }
+                ]
+            }
+        ],
+        "standby": false,
+        "switch_enabled": true,
+        "wps": {
+            "button": false,
+            "pin": false
+        }
+    }
+}
